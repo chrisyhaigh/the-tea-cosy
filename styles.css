@@ -1,0 +1,123 @@
+/*Universal styles in the body section*/
+
+body {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+
+/
+
+a {
+    color: seashell;
+}
+
+/* using a flex-container class helps us easily use Flexbox for moving and spacing elements within parent elements */
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+header {
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    height: 69px;
+    border-bottom: solid 1px seashell;
+    align-items: center;
+}
+
+header img {
+    height: 50px;
+    padding-left: 10px;
+}
+
+/* the flex-grow property helps seperate the nav links and the logo which I wanted to go left & right */
+
+nav {
+    text-align: right;
+    flex-grow: 1;
+}
+
+/* using the span tag helps format the design a lot easier for spacing padding etc */
+
+nav span {
+    display: inline-block;
+    padding: 20px 10px;
+    margin-right: 20px;
+}
+
+#mission {
+    height: 700px;
+    width: 1200px;
+    margin-left: 60px;
+    background-image: url("images/img-mission-background.jpg");
+}
+
+#mission .content {
+    background-color: black;
+    margin: auto;
+    width: 100%;
+}
+
+#store {
+    height: 700px;
+    width: 1000px;
+    margin: auto;
+    padding: 70px;
+}
+
+.option {
+    display: block;
+    margin: 10px;
+    font-weight: bold;
+}
+
+/*this sorted the option pictures and content within an organised fashion using the display: block feature */
+
+.option span {
+    display: block;
+
+}
+
+#locations {
+    background-image: url("images/img-locations-background.jpg");
+    width: 1200px;
+    height: 500px;
+    margin-left: 60px;
+    padding-top: 60px;
+    display: block;
+}
+
+
+.content {
+    background-color: black;
+    display: inline-block;
+    margin: 40px;
+    margin-top: 15px;
+    width: 300px;
+    opacity: 1;
+}
+
+#contact {
+    background-color: black;
+    height: 200px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+
+footer {
+    color: seashell;
+    text-align: left;
+    padding-left: 20px;
+}
+
+
